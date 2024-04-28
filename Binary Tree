@@ -4,7 +4,49 @@ We can perform traversals on binary tree
 There are three types-
   1. Preorder Traversal 
     Node Left Right 
+
+void preorderTraversal(TreeNode node){
+if(node != null)
+  visit(node);
+  preorderTraversal(node.left)
+  preorderTraversal(node.right)
+}
+}
   2. Inorder Traversal 
     Left Node Right 
+
+void inorderTraversal(TreeNode node)
+{
+if (node != null){
+  inorderTraversal(node.left);
+  visit(node);
+  inorderTraversal(node.right);
+}
+}
   3. Postorder Traversal 
     Left Right Node
+
+void postorderTraversal(TreeNode node){
+if(node != null){
+  postoredrTraversal(node.left);
+  postorderTraversal(node.right);
+  visit(node);
+}
+
+Differences between Graph and Tree
+1. Tree cannot be discconnected
+2. Tree cannot be cyclic/closed
+3. Tree is always pointing downwards and there are no arrows 
+4. Tree can have only 1 parent
+
+A tree is called a k-ary tree where k is the no of children
+
+Complete tree
+A tree which has the nodes filled up from left to right 
+
+Perfect tree 
+A tree which has zero children or atleast the k-ary children
+
+Full tree
+A tree where each leaf node has the same depth
+
