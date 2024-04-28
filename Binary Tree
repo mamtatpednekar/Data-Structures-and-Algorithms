@@ -1,0 +1,10 @@
+Heirarchical structure with parents and children
+Can have atmost two children 
+We can perform traversals on binary tree
+There are three types-
+  1. Preorder Traversal 
+    Node Left Right 
+  2. Inorder Traversal 
+    Left Node Right 
+  3. Postorder Traversal 
+    Left Right Node
